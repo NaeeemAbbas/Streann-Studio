@@ -24,7 +24,7 @@
         </div>
         <div class="lg:w-1/2 relative flex justify-center items-center">
           <img
-            src="../assets/Apple Set@2x.png"
+            :src="Apple"
             alt="Streann Studio on Desktop and Tablet"
             width="600"
             height="400"
@@ -59,7 +59,7 @@
         </div>
         <div class="lg:w-1/2 relative flex justify-center items-center">
           <img
-            src="../assets/Group 2085665188.png"
+            :src="Group"
             alt="Streann Studio on Laptop"
             width="600"
             height="400"
@@ -73,6 +73,8 @@
 
 <script setup>
 // No script logic needed for this static component
+import Apple from  '../assets/Apple.png';
+import  Group from '../assets/Group.png';
 </script>
 
 <style scoped>

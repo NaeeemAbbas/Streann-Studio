@@ -5,7 +5,7 @@
       <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-4">
         <div class="flex items-center space-x-2">
           <img
-            src="/src/assets/logo.png"
+            :src="logo"
             alt="Streann Studio Logo"
             width="40"
             height="40"
@@ -61,8 +61,8 @@
           <a href="#" aria-label="LinkedIn" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors">
             <LinkedinIcon class="w-5 h-5 text-white" />
           </a>
-          <a href="#" aria-label="TikTok" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors">
-            <TikTokIcon class="w-5 h-5 text-white" />
+          <a href="#" aria-label="Github" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-gray-700 transition-colors">
+            <Github class="w-5 h-5 text-white" />
           </a>
         </div>
       </div>
@@ -71,7 +71,7 @@
       <div class="flex flex-col items-center md:items-start text-center md:text-left space-y-4 lg:col-span-1">
         <h3 class="text-xl font-bold text-gray-900 mb-2">Partner Program</h3>
         <img
-          src="/src/assets/FooterImg.png"
+          :src="FooterImg"
           alt="Chatbot icon"
           width="80"
           height="80"
@@ -88,21 +88,11 @@
 </template>
 
 <script setup>
-import { MapPinIcon, PhoneIcon, MailIcon, TwitterIcon, FacebookIcon, InstagramIcon, LinkedinIcon } from 'lucide-vue-next';
+import logo from '../assets/Logo.png'
+import FooterImg from '../assets/FooterImg.png'
+
+import { MapPinIcon, PhoneIcon, MailIcon, TwitterIcon, FacebookIcon, InstagramIcon, LinkedinIcon, TicketCheckIcon, Github } from 'lucide-vue-next';
 
 // Custom TikTok icon as it's not directly in lucide-vue-next
-const TikTokIcon = {
-  props: {
-    class: String
-  },
-  template: `
-    <svg :class="class" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12.525 1.151c-1.416-1.397-3.942 0-3.942 0v4.701c-4.048 1.18-8.064 5.198-8.064 9.205 0 5.04 4.06 9.101 9.101 9.101 5.04 0 9.101-4.06 9.101-9.101 0-3.942-2.53-7.959-6.578-9.138V1.151zM17.5 14.5c0 2.76-2.24 5-5 5s-5-2.24-5-5 2.24-5 5-5 5 2.24 5 5z"/>
-    </svg>
-  `
-};
-</script>
 
-<style scoped>
-/* No specific styles needed beyond Tailwind classes */
-</style>
+</script>

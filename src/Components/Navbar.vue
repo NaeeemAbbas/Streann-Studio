@@ -7,7 +7,7 @@
 
     <!-- Logo -->
     <div class="relative z-10 flex items-center space-x-2">
-      <img src="/src/assets/logo.png" alt="">
+      <img :src="logo" alt="logo">
     </div>
 
     <!-- Desktop Navigation -->
@@ -91,7 +91,7 @@
 
 <script setup>
 import { ref } from 'vue';
-
+import logo from '../assets/Logo.png'
 const isMobileMenuOpen = ref(false);
 
 const toggleMobileMenu = () => {

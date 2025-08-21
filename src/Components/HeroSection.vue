@@ -16,7 +16,7 @@
 
       <div class="relative w-full max-w-5xl mx-auto overflow-hidden border border-gray-200">
         <img
-          src="../assets/BCD_JBB0523-00708 2 (1).jpg"
+          :src="images1"
           alt="Streann Studio Application Interface"
           width="900"
           height="500"
@@ -37,6 +37,7 @@
 
 <script setup>
 // No script logic needed for this static component
+import images1 from '../assets/image1.jpg'
 </script>
 
 <style>
