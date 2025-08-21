@@ -22,7 +22,7 @@
         </div>
         <div class="lg:w-1/2 relative flex justify-center items-center">
           <img
-            src="../assets/iMac 24 inch.png"
+            :src="iMac"
             alt="Streann Studio on Desktop"
             width="600"
             height="400"
@@ -35,6 +35,7 @@
 </template>
 
 <script setup>
+import  iMac from '../assets/iMac.png'
 // No script logic needed for this static component
 </script>
 

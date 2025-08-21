@@ -8,7 +8,7 @@
       <!-- This is the "red section" where the image will be fitted -->
       <!-- Replace the placeholder.svg with your actual image URL -->
       <img
-        src="/src/assets/Apple.png"
+        :src="Apple"
         alt="Content image for Streann Studio"
         class="w-full h-full object-cover"
       />
